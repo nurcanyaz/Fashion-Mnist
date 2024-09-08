@@ -1,13 +1,13 @@
 from flask import Flask, render_template, request
 import os
-from langchain.prompts import PromptTemplate
 from langchain.llms import OpenAI
+from langchain.prompts import PromptTemplate
 from langchain.chains import LLMChain
 import re
 
 import os
 import re
-os.environ['OPENAI_API_KEY'] = 'your key is here' # your openai key
+os.environ['OPENAI_API_KEY'] = "your api key"
 
 
 
@@ -39,7 +39,7 @@ def index():
     return render_template('index.html')
 
 
-@app.route('/recommend', methods=['POST'])
+@app.route('/recommend', methods=['GET', 'POST'])
 def recommend():
     if request.method == "POST":
         age = request.form['age']
@@ -63,6 +63,7 @@ def recommend():
                               'allergics': allergics,
                               'foodtype': foodtype}
         results = chain_resto.run(input_data)
+        
 
         # Extracting the different recommendations using regular expressions
         restaurant_names = re.findall(r'Restaurants:(.*?)Breakfast:', results, re.DOTALL)
