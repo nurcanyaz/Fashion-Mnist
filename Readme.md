@@ -1,6 +1,7 @@
 # 🥗 Diet & Workout Recommendation System | Diyet ve Egzersiz Öneri Sistemi
 
-📘 [English](#english-version) | 📗 [🇹🇷 Türkçe Versiyon](#turkce-versiyon)
+📘 [English](#english-version) | 📗 [Türkçe](#turkce)
+
 
 
 ---
