@@ -67,8 +67,8 @@ diet-recommendation-app/
 
 1. Clone the repository:
    ```bash
-   git clone <repo-url>
-   cd diet-recommendation-app
+   git clone https://github.com/nurcanyaz/LLM.git
+   cd llm-diet-coach-with-openai-langcahin
    ```
 
 2. Install dependencies:
@@ -149,8 +149,8 @@ diet-recommendation-app/
 
 1. Reponun kopyalanması:
    ```bash
-   git clone <repo-url>
-   cd diet-recommendation-app
+   git clone https://github.com/nurcanyaz/LLM.git
+   cd llm-diet-coach-with-openai-langcahin
    ```
 
 2. Gereken kütüphanelerin yüklenmesi:
